@@ -17,7 +17,7 @@
 
   <target name="jar" depends="clean, compile">
         <mkdir dir="${build}/${jar}" />
-        <jar destfile="src/json-simple-1.1.1.jar" basedir="${build}/${classes}">
+        <jar destfile="json-simple-1.1.1.jar" basedir="${build}/${classes}">
             <manifest>
                 <attribute name="Main-Class" value="MainClass" />
             </manifest>
