@@ -1,0 +1,31 @@
+[
+{
+"name": "job1",
+"isDependedBy": ["job4", "job2"]
+},
+{
+"name": "job2",
+"isDependedBy": []
+},
+{
+"name": "job3",
+"isDependedBy": ["job2"]
+},
+{
+"name": "job4",
+"isDependedBy": []
+},
+{
+"name": "job5",
+"isDependedBy": []
+},
+{
+"name": "job6",
+"isDependedBy": ["job5"]
+},
+{
+"name": "job7",
+"isDependedBy": ["job1", "job4", "job6"]
+}
+]
+
