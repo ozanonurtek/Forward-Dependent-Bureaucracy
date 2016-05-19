@@ -15,11 +15,8 @@ public class Test extends JPanel
     JFileChooser fc;
 
     public Test() {
-    	
+    	//Create log
         super(new BorderLayout());
-        
-        //Create the log first, because the action listeners
-        //need to refer to it.
         log = new JTextArea(5,20);
         log.setMargin(new Insets(20,20,20,20));
         log.setEditable(false);
