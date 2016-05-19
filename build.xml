@@ -6,11 +6,10 @@
     <property name="dir.jar"     value="src"/>
 
     <property name="main-class"  value="TestConsole"/>
-    <javac srcdir="." destdir="${classes}">
-        <classpath>
-            <pathelement location="json-simple-1.1.1"/>
-        </classpath>
-    </javac>
+    <classpath>
+                <pathelement path="${classpath}"/>
+                <pathelement location="${dir.src}/json-simple-1.1.1.jar"/>
+    </classpath>
     <target name="clean">
         <delete dir="${dir.build}"/>
     </target>
