@@ -3,13 +3,9 @@
     <property name="dir.src"     value="src"/>
     <property name="dir.build"   value="build"/>
     <property name="dir.classes" value="${dir.build}/classes"/>
-    <property name="dir.jar"     value="src"/>
+    <property name="dir.jar"     value="${dir.build}/jar"/>
 
     <property name="main-class"  value="TestConsole"/>
-    <classpath>
-                <pathelement path="${classpath}"/>
-                <pathelement location="${dir.src}/json-simple-1.1.1.jar"/>
-    </classpath>
     <target name="clean">
         <delete dir="${dir.build}"/>
     </target>
@@ -19,12 +15,14 @@
         <javac srcdir="${dir.src}" destdir="${dir.classes}"/>
     </target>
 
-    <target name="jar" depends="compile">
-        <mkdir dir="${dir.jar}"/>
-        <jar destfile="${dir.jar}/${ant.project.name}.jar" basedir="${dir.classes}">
+  <target name="jar" depends="clean, compile">
+        <mkdir dir="${build}/${jar}" />
+        <jar destfile="src/json-simple-1.1.1.jar" basedir="${build}/${classes}">
             <manifest>
-                <attribute name="Main-Class" value="${main-class}"/>
+                <attribute name="Main-Class" value="MainClass" />
             </manifest>
+            <fileset file="test.txt">
+            </fileset>
         </jar>
     </target>
 
