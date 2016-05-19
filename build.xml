@@ -1,3 +1,4 @@
+
 <project name="Forward-Dependent-Bureaucracy" basedir="." default="main">
     <property name="dir.src"     value="src"/>
     <property name="dir.build"   value="build"/>
@@ -5,7 +6,11 @@
     <property name="dir.jar"     value="src"/>
 
     <property name="main-class"  value="TestConsole"/>
-
+    <javac srcdir="." destdir="${classes}">
+        <classpath>
+            <pathelement location="json-simple-1.1.1"/>
+        </classpath>
+    </javac>
     <target name="clean">
         <delete dir="${dir.build}"/>
     </target>
