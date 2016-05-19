@@ -2,7 +2,7 @@
     <property name="dir.src"     value="src"/>
     <property name="dir.build"   value="build"/>
     <property name="dir.classes" value="${dir.build}/classes"/>
-    <property name="dir.jar"     value="${dir.build}/jar"/>
+    <property name="dir.jar"     value="src"/>
 
     <property name="main-class"  value="TestConsole"/>
 
