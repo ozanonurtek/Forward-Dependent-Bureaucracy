@@ -32,6 +32,14 @@ Linovi 2016 | Forward Dependent Bureaucracy Project
 
 - 3rd Party Library to read json from json file format.
 
+#### .travis.yml:
+
+- To show that build is passing and project is running on Travis-CI
+
+#### build.xml:
+
+- Xml script to Ant build of the project.
+
 ## Test and Contact:
 ##### You can download the latest stabil release of project to test it via using a simple GUI.
 ##### You can send me an email to ask your question, please feel free to contribute.
