@@ -8,9 +8,6 @@ import org.json.simple.parser.ParseException;
 
 public class Test extends JPanel
                              implements ActionListener {
-    /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	static private final String newline = "\n";
     JButton openButton, saveButton;
