@@ -1,4 +1,4 @@
-# Forward-Dependent-Bureaucracy
+# Forward-Dependent-Bureaucracy[![Build Status](https://travis-ci.org/ozanonurtek/Forward-Dependent-Bureaucracy.svg?branch=master)](https://travis-ci.org/ozanonurtek/Forward-Dependent-Bureaucracy)
 Linovi 2016 | Forward Dependent Bureaucracy Project
 
 ## A Brief Explanation:
