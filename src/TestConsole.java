@@ -1,11 +1,10 @@
-
 import java.util.ArrayList;
 
 public class TestConsole {
 
 	public static void main(String[] args) throws Exception {
 		//Please dont forget to change PATH while parsing json file.
-		String PATH = "/home/ozan/Desktop/input.json";
+		String PATH = "C:/Users/ASUS/Desktop/Forward Dependent Bureaucracy-Ozan Onur TEK/json-test/sample_input_from_project.json";
 		JsonOp json = new JsonOp(PATH);
 		RepresentAsGraph graph = new RepresentAsGraph(json.getJobsList(),
 				json.getConnections());
