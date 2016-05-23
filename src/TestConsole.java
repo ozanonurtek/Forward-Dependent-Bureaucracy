@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 public class TestConsole {
@@ -16,12 +17,11 @@ public class TestConsole {
 		System.out.println();
 		System.out.println("---!HERE ARE CONNECTIONS!---");
 		for (ArrayList<Integer> i : json.getConnections()) {
-			for (int k = i.size() - 1; 0 <= k; k--) {
+			for (int k =0; k<i.size(); k++) {
 				if (k % 2 == 0)
-					System.out.println("job" + (i.get(k) + 1));
+				System.out.print("job" + (i.get(k) + 1)+ " is dependent on ");
 				else
-					System.out.print("job" + (i.get(k) + 1)
-							+ " is dependent on ");
+					System.out.println("job" + (i.get(k) + 1));
 			}
 		}
 
