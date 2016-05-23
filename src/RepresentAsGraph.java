@@ -61,8 +61,6 @@ public class RepresentAsGraph {
 				return mResult;
 			}
 		}
-
-		Collections.reverse(mResult);
 		return mResult;
 	}
 
