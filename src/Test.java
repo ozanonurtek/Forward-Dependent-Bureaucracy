@@ -72,11 +72,11 @@ public class Test extends JPanel
         		log.append("\n");
         		log.append("---!HERE IS OUR CONNECTIONS!---\n");
         		for(ArrayList<Integer> i : json.getConnections()){
-        			for(int k=i.size()-1; 0<=k; k--){
+        			for(int k =0; k<i.size(); k++){
         				if(k%2 == 0)
-        					log.append("job" + (i.get(k)+1) + "\n");
+        					log.append("job" + (i.get(k) + 1)+ " is dependent on ");
         				else
-        					log.append("job" + (i.get(k)+1)   + " is dependent on ");
+        					log.append("job" + (i.get(k) + 1));
         			}
         		}
         		log.append("\n");
