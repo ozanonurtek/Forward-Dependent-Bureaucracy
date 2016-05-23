@@ -44,3 +44,9 @@ Linovi 2016 | Forward Dependent Bureaucracy Project
 ##### You can download the latest stabil release of project to test it via using a simple GUI.
 ##### You can send me an email to ask your question, please feel free to contribute.
 - Ozan Onur Tek : *ozanonurtek@gmail.com*
+
+## Updates
+
+- In branch "optimized-version" you can find the latest optimized changes about project. 
+- The order of the jobs in mConnection arraylist has been changed in JsopOp.java file. Thus in RepresentAsGraph.java no need to reverse the mResult list anymore.
+- Reversing a list is not a big deal but it was a redundant piece of code.
