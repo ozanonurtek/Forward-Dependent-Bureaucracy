@@ -44,9 +44,9 @@ public class JsonOp {
 			JSONArray dependentList = (JSONArray) job.get("isDependedBy");
 			for (Object dependent : dependentList) {
 				ArrayList<Integer> inner = new ArrayList<Integer>();
-				inner.add(x - 1);
 				String dep = (String) dependent;
 				inner.add(Integer.parseInt(dep.replaceAll("[^0-9?!\\.]", "")) - 1);
+				inner.add(x - 1);
 				mConnections.add(inner);
 			}
 		}
